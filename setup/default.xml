@@ -76,6 +76,8 @@
         SELECT * FROM tc_statistics WHERE captureTime BETWEEN :from AND :to ORDER BY captureTime
     </entry>
 
+    <entry key='h02.port'>5013</entry>
+<!--
     <entry key='gps103.port'>5001</entry>
     <entry key='tk103.port'>5002</entry>
     <entry key='gl100.port'>5003</entry>
@@ -274,5 +276,5 @@
     <entry key='racedynamics.port'>5195</entry>
     <entry key='rst.port'>5196</entry>
     <entry key='pt215.port'>5197</entry>
-
+-->
 </properties>

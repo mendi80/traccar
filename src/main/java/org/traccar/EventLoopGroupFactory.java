@@ -20,8 +20,8 @@ import io.netty.channel.nio.NioEventLoopGroup;
 
 public final class EventLoopGroupFactory {
 
-    private static EventLoopGroup bossGroup = new NioEventLoopGroup();
-    private static EventLoopGroup workerGroup = new NioEventLoopGroup();
+    private static EventLoopGroup bossGroup = new NioEventLoopGroup(1);
+    private static EventLoopGroup workerGroup = new NioEventLoopGroup(2);
 
     private EventLoopGroupFactory() {
     }
