@@ -1,6 +1,5 @@
 package org.traccar.api.resource;
 
-import org.joda.time.DateTime;
 import org.traccar.api.BaseResource;
 
 import javax.annotation.security.PermitAll;
@@ -15,11 +14,10 @@ import java.time.format.DateTimeFormatter;
 @Path("ping")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class PingResource extends BaseResource
-{
+public class PingResource extends BaseResource {
     @PermitAll
     @GET
-    public String Get(){
-         return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
+    public String get() {
+        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
     }
 }
